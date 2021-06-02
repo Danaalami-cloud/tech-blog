@@ -1,0 +1,24 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danaalami-cloud/tech-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danaalami-cloud/tech-blog/issues"
+  },
+  "homepage": "https://github.com/Danaalami-cloud/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "install": "^0.13.0",
+    "npm": "^7.15.1"
+  }
+}
