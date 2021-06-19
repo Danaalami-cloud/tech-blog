@@ -6,4 +6,6 @@ const homepageRoutes = require('./homepage');
 router.use('/', homepageRoutes);
 router.use('/api', apiRoutes);
 
+
+//add the dashboard router
 module.exports = router;

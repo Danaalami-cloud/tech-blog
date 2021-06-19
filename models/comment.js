@@ -1,8 +1,8 @@
-const { Model, DataTypes} = require("sequilize");
-const sequilize = require("../config/connections");
+const { Model, DataTypes} = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Comment extends Model {}
-
+//Can get away with only having a body
 Comment.init(
     {
         id: {
@@ -29,7 +29,7 @@ Comment.init(
         }
 
     },
-),
+
 {
     sequelize,
     timestamps: false,
@@ -37,6 +37,6 @@ Comment.init(
     underscored: true,
     modelName: 'post',
   }
-
+)
 
 module.exports = Comment;

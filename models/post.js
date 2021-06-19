@@ -1,8 +1,8 @@
-const { Model, DataTypes} = require("sequilize");
-const sequilize = require("../config/connections");
+const { Model, DataTypes} = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Post extends Model {}
-
+//title and body
 Post.init(
     {
         id: {
@@ -29,7 +29,7 @@ Post.init(
         }
 
     },
-),
+
 {
     sequelize,
     timestamps: false,
@@ -37,6 +37,7 @@ Post.init(
     underscored: true,
     modelName: 'post',
   }
+  )
 
 
 module.exports = Post;
